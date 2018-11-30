@@ -1,0 +1,12 @@
+#include "xgpio.h"
+#include "xuartlite.h"
+#include <stdio.h>
+
+int main()
+{
+	while(1)
+	{
+		printf("Hello World");
+	}
+	return 0;
+}

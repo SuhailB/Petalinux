@@ -1,0 +1,276 @@
+02:59:53 INFO  : Registering command handlers for SDK TCF services
+03:00:00 INFO  : Launching XSCT server: xsct -n -interactive /home/suhail/Documents/UART/UART.sdk/temp_xsdb_launch_script.tcl
+03:00:05 INFO  : XSCT server has started successfully.
+03:00:05 INFO  : Successfully done setting XSCT server connection channel  
+03:00:12 INFO  : Successfully done setting SDK workspace  
+03:00:12 INFO  : Processing command line option -hwspec /home/suhail/Documents/UART/UART.sdk/system_wrapper.hdf.
+03:05:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:06:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:06:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:06:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:07:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:07:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:07:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:09:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:10:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:11:35 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:12:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:13:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:14:02 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:14:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:15:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:15:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:17:19 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:17:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:18:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:18:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:21:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:21:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:27:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:39:52 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:55:06 INFO  : Registering command handlers for SDK TCF services
+03:55:09 INFO  : Launching XSCT server: xsct -n -interactive /home/suhail/Documents/UART/UART.sdk/temp_xsdb_launch_script.tcl
+03:55:14 INFO  : XSCT server has started successfully.
+03:55:14 INFO  : Successfully done setting XSCT server connection channel  
+03:55:18 INFO  : Successfully done setting SDK workspace  
+03:55:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:55:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:58:40 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:58:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+03:58:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA" && level==0} -index 1' command is executed.
+03:58:54 INFO  : FPGA configured successfully with bitstream "/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system_wrapper.bit"
+04:00:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA" && level==0} -index 1' command is executed.
+04:00:00 INFO  : 'fpga -state' command is executed.
+04:00:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:00:00 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6CA9EA' is selected.
+04:00:00 INFO  : 'jtag frequency' command is executed.
+04:00:00 INFO  : Sourcing of '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:00:01 INFO  : Context for 'APU' is selected.
+04:00:01 INFO  : Hardware design information is loaded from '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:00:01 INFO  : 'configparams force-mem-access 1' command is executed.
+04:00:01 INFO  : Context for 'APU' is selected.
+04:00:01 INFO  : 'stop' command is executed.
+04:00:25 INFO  : 'ps7_init' command is executed.
+04:00:26 INFO  : 'ps7_post_config' command is executed.
+04:00:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:00:27 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:00:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:00:32 INFO  : The application '/home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:00:32 INFO  : 'configparams force-mem-access 0' command is executed.
+04:00:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+loadhw -hw /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+dow /home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:00:32 INFO  : Memory regions updated for context APU
+04:00:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:00:33 INFO  : 'con' command is executed.
+04:00:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+con
+----------------End of Script----------------
+
+04:00:33 INFO  : Launch script is exported to file '/home/suhail/Documents/UART/UART.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart.elf_on_local.tcl'
+04:08:31 INFO  : Disconnected from the channel tcfchan#1.
+04:08:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA" && level==0} -index 1' command is executed.
+04:08:33 INFO  : 'fpga -state' command is executed.
+04:08:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:08:34 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6CA9EA' is selected.
+04:08:34 INFO  : 'jtag frequency' command is executed.
+04:08:34 INFO  : Sourcing of '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:08:34 INFO  : Context for 'APU' is selected.
+04:08:36 INFO  : Hardware design information is loaded from '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:08:36 INFO  : 'configparams force-mem-access 1' command is executed.
+04:08:36 INFO  : Context for 'APU' is selected.
+04:08:38 INFO  : 'stop' command is executed.
+04:08:56 INFO  : 'ps7_init' command is executed.
+04:08:56 INFO  : 'ps7_post_config' command is executed.
+04:08:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:08:56 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:08:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:08:58 INFO  : The application '/home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:08:58 INFO  : 'configparams force-mem-access 0' command is executed.
+04:08:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+loadhw -hw /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+dow /home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:08:58 INFO  : Memory regions updated for context APU
+04:08:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:08:58 INFO  : 'con' command is executed.
+04:08:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+con
+----------------End of Script----------------
+
+04:08:58 INFO  : Launch script is exported to file '/home/suhail/Documents/UART/UART.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart.elf_on_local.tcl'
+04:13:10 INFO  : Disconnected from the channel tcfchan#2.
+04:15:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA" && level==0} -index 1' command is executed.
+04:15:29 INFO  : 'fpga -state' command is executed.
+04:15:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:15:30 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6CA9EA' is selected.
+04:15:30 INFO  : 'jtag frequency' command is executed.
+04:15:30 INFO  : Sourcing of '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:15:30 INFO  : Context for 'APU' is selected.
+04:15:30 INFO  : Hardware design information is loaded from '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:15:30 INFO  : 'configparams force-mem-access 1' command is executed.
+04:15:30 INFO  : Context for 'APU' is selected.
+04:15:31 INFO  : 'stop' command is executed.
+04:15:58 INFO  : 'ps7_init' command is executed.
+04:15:58 INFO  : 'ps7_post_config' command is executed.
+04:15:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:15:59 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:15:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:16:01 INFO  : The application '/home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:16:01 INFO  : 'configparams force-mem-access 0' command is executed.
+04:16:01 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+loadhw -hw /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+dow /home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:16:01 INFO  : Memory regions updated for context APU
+04:16:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:16:02 INFO  : 'con' command is executed.
+04:16:02 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+con
+----------------End of Script----------------
+
+04:16:02 INFO  : Launch script is exported to file '/home/suhail/Documents/UART/UART.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart.elf_on_local.tcl'
+04:18:44 INFO  : Disconnected from the channel tcfchan#3.
+04:18:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA" && level==0} -index 1' command is executed.
+04:18:46 INFO  : 'fpga -state' command is executed.
+04:18:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:18:47 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6CA9EA' is selected.
+04:18:47 INFO  : 'jtag frequency' command is executed.
+04:18:47 INFO  : Sourcing of '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:18:47 INFO  : Context for 'APU' is selected.
+04:18:49 INFO  : Hardware design information is loaded from '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:18:49 INFO  : 'configparams force-mem-access 1' command is executed.
+04:18:49 INFO  : Context for 'APU' is selected.
+04:18:50 INFO  : 'stop' command is executed.
+04:19:14 INFO  : 'ps7_init' command is executed.
+04:19:14 INFO  : 'ps7_post_config' command is executed.
+04:19:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:19:15 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:19:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:19:17 INFO  : The application '/home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:19:17 INFO  : 'configparams force-mem-access 0' command is executed.
+04:19:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+loadhw -hw /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+dow /home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:19:17 INFO  : Memory regions updated for context APU
+04:19:18 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:19:18 INFO  : 'con' command is executed.
+04:19:18 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+con
+----------------End of Script----------------
+
+04:19:18 INFO  : Launch script is exported to file '/home/suhail/Documents/UART/UART.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart.elf_on_local.tcl'
+04:22:42 INFO  : Disconnected from the channel tcfchan#4.
+04:22:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA" && level==0} -index 1' command is executed.
+04:22:44 INFO  : 'fpga -state' command is executed.
+04:22:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+04:22:44 INFO  : Jtag cable 'Digilent Zybo Z7 210351A6CA9EA' is selected.
+04:22:44 INFO  : 'jtag frequency' command is executed.
+04:22:44 INFO  : Sourcing of '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl' is done.
+04:22:44 INFO  : Context for 'APU' is selected.
+04:22:46 INFO  : Hardware design information is loaded from '/home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf'.
+04:22:46 INFO  : 'configparams force-mem-access 1' command is executed.
+04:22:46 INFO  : Context for 'APU' is selected.
+04:22:46 INFO  : 'stop' command is executed.
+04:23:06 INFO  : 'ps7_init' command is executed.
+04:23:07 INFO  : 'ps7_post_config' command is executed.
+04:23:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:23:07 INFO  : Processor reset is completed for 'ps7_cortexa9_0'.
+04:23:07 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:23:09 INFO  : The application '/home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf' is downloaded to processor 'ps7_cortexa9_0'.
+04:23:09 INFO  : 'configparams force-mem-access 0' command is executed.
+04:23:09 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/ps7_init.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+loadhw -hw /home/suhail/Documents/UART/UART.sdk/system_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+stop
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+rst -processor
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+dow /home/suhail/Documents/UART/UART.sdk/UART/Debug/UART.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+04:23:09 INFO  : Memory regions updated for context APU
+04:23:09 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+04:23:09 INFO  : 'con' command is executed.
+04:23:09 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "ARM*#0" && jtag_cable_name =~ "Digilent Zybo Z7 210351A6CA9EA"} -index 0
+con
+----------------End of Script----------------
+
+04:23:09 INFO  : Launch script is exported to file '/home/suhail/Documents/UART/UART.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_uart.elf_on_local.tcl'
+01:34:50 INFO  : Disconnected from the channel tcfchan#5.
+18:07:21 INFO  : Registering command handlers for SDK TCF services
+18:07:23 INFO  : Launching XSCT server: xsct -n -interactive /home/suhail/Documents/UART/UART.sdk/temp_xsdb_launch_script.tcl
+18:07:29 INFO  : XSCT server has started successfully.
+18:07:34 INFO  : Successfully done setting XSCT server connection channel  
+18:07:34 INFO  : Successfully done setting SDK workspace  
+17:23:53 INFO  : Launching XSCT server: xsct -n -interactive /home/suhail/Documents/UART/UART.sdk/temp_xsdb_launch_script.tcl
+17:23:56 INFO  : XSCT server has started successfully.
+17:24:15 INFO  : Successfully done setting XSCT server connection channel  
+17:24:15 INFO  : Successfully done setting SDK workspace  
+17:24:20 INFO  : Registering command handlers for SDK TCF services

@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/project/xilinx.gnu.armv7.linux.exe.debug.1305016392/PATH/delimiter=\:
+environment/project/xilinx.gnu.armv7.linux.exe.debug.1305016392/PATH/operation=prepend
+environment/project/xilinx.gnu.armv7.linux.exe.debug.1305016392/PATH/value=/opt/pkg/petalinux/tools/linux-i386/gcc-arm-linux-gnueabi/bin
+environment/project/xilinx.gnu.armv7.linux.exe.debug.1305016392/append=true
+environment/project/xilinx.gnu.armv7.linux.exe.debug.1305016392/appendContributed=true
+environment/project/xilinx.gnu.armv7.linux.exe.release.1614181688/PATH/delimiter=\:
+environment/project/xilinx.gnu.armv7.linux.exe.release.1614181688/PATH/operation=prepend
+environment/project/xilinx.gnu.armv7.linux.exe.release.1614181688/PATH/value=/opt/pkg/petalinux/tools/linux-i386/gcc-arm-linux-gnueabi/bin
+environment/project/xilinx.gnu.armv7.linux.exe.release.1614181688/append=true
+environment/project/xilinx.gnu.armv7.linux.exe.release.1614181688/appendContributed=true

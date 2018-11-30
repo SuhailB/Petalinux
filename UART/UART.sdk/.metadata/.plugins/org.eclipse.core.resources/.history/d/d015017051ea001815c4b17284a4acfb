@@ -1,0 +1,32 @@
+#include "xgpio.h"
+#include "xuartlite.h"
+#include <stdio.h>
+
+int main()
+{
+		init_platform();
+	    XUartLite UART;
+	    XGpio input;
+	    XGpio output;
+	    unsigned char data = 0;
+
+
+	    XUartLite_Initialize(&UART, XPAR_AXI_UARTLITE_0_DEVICE_ID);
+	    XGpio_Initialize(&input, XPAR_AXI_GPIO_0_DEVICE_ID);	//initialize output XGpio variable
+	    XGpio_Initialize(&output, XPAR_AXI_GPIO_1_DEVICE_ID);	//initialize input XGpio variable
+
+	    while(1)
+	    {
+			data = XGpio_DiscreteRead(&input,1);
+
+			XUartLite_Send(&UART, "A\n", 2);
+
+			usleep(100000);
+
+	    }
+
+	    cleanup_platform();
+
+	    return 0;
+}
+

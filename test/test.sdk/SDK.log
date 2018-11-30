@@ -1,0 +1,17 @@
+20:44:43 INFO  : Registering command handlers for SDK TCF services
+20:44:58 INFO  : Launching XSCT server: xsct -n -interactive /home/suhail/Documents/test/test.sdk/temp_xsdb_launch_script.tcl
+20:45:02 INFO  : XSCT server has started successfully.
+20:45:02 INFO  : Successfully done setting XSCT server connection channel  
+20:45:05 INFO  : Successfully done setting SDK workspace  
+20:45:05 INFO  : Processing command line option -hwspec /home/suhail/Documents/test/test.sdk/design_1_wrapper.hdf.
+21:15:07 INFO  : SDK has detected change in the last modified timestamps for source hardware specification file Source:1542338067000,  Project:1542336234000
+21:15:07 INFO  : Project design_1_wrapper_hw_platform_0's source hardware specification located at /home/suhail/Documents/test/test.sdk/design_1_wrapper.hdf is now different from the local copy.
+		 The local copy will be replaced with the source specification and your workspace will be updated.
+21:15:22 INFO  : Copied contents of /home/suhail/Documents/test/test.sdk/design_1_wrapper.hdf into /design_1_wrapper_hw_platform_0/system.hdf.
+21:15:27 INFO  : Synchronizing projects in the workspace with the hardware platform specification changes.
+21:15:27 INFO  : Clearing existing target manager status.
+21:15:28 WARN  : Given IPC port value is invalid. Using default port 2350
+21:15:28 WARN  : Given XMD timeout value is invalid. Using default value of 50000
+21:15:40 WARN  : Given XMD transaction timeout value is invalid. Using default value of 60000 milli seconds
+21:15:41 INFO  : Workspace synchronized with the new hardware specification file. Cleaning dependent projects...
+21:15:41 WARN  : Linker script will not be updated automatically. Users need to update it manually.
